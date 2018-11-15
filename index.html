@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+<head>
+  <meta charset="utf-8" />
+  <script src="jquery-3.2.1.js"></script>
+  <title>exercice1 JQ</title>
+</head>
+<body>
+  <button id="buttonmore" type="button" name="button">+</button>
+  <button id="buttonless" type="button" name="button">-</button>
+  <div class="input">
+    <input id="number"type="text" name="" value="0" />
+  </div>
+  <script>
+  $(function(){
+    $('#buttonmore').click(function(){
+      var number = $('#number').val();
+      number ++;
+      $('#number').val(number);
+    });
+    $('#buttonless').click(function(){
+      var number = $('#number').val();
+      number --;
+      $('#number').val(number);
+    });
+  });
+  </script>
+</body>
+</html>
